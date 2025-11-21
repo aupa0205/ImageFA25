@@ -5,11 +5,14 @@
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-assets>
+        <a-asset-item id="bike" src="assets/Yaiba Kusanagi CT-3X.obj"></a-asset-item>
+        <a-asset-item id="building" src="assets/building design v6.obj"></a-asset-item>
+      </a-assets>
+      <a-obj-model src="#building" position="-20 3 -5" scale="5 5 5" material="shader:flat;src:peter-muscutt-vPG4C-hbACo-unsplash.jpg"></a-obj-model> 
+      <a-obj-model src="#bike" position="-2 -8 3" scale="2 2 2" material="shader:flat;src:alex-perez-pEgsWN0kwbQ-unsplash.jpg"></a-obj-model>
+      <a-plane position="-10 -8 0" rotation="-90 0 0" width="50" height="50" src="assets/peter-muscutt-vPG4C-hbACo-unsplash.jpg"></a-plane>
+      <a-sky src="assets/2150689410.jpg"></a-sky>
     </a-scene>
   </body>
 </html>
